@@ -3,9 +3,7 @@
 # Prevent interactive prompts
 export DEBIAN_FRONTEND=noninteractive
 
-# Update and install required packages
-sudo apt update
-sudo apt upgrade -yq -o Dpkg::Options::="--force-confold"
+# Install required packages
 sudo apt install -y bat ranger
 
 # Set up 'bat' alias (since Debian-based distros call it 'batcat')
